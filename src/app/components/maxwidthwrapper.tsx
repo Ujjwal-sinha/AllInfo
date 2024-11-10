@@ -1,0 +1,17 @@
+import { cn } from "@/utils"
+import { ReactNode } from "react"
+
+ interface maxwidthwrapperprops{
+    className?:string,
+    children :ReactNode
+ }
+ 
+ 
+ 
+ export const Maxwidthwrapper =({className,children}:maxwidthwrapperprops)=>{
+return<div className={cn("h-full mx-auto w-full max-w-screen-xl px-2.5 md:px-20",className)}>
+
+
+    {children}
+</div>
+ }
